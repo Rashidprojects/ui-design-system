@@ -1,5 +1,4 @@
 // src/components/atoms/button/Button.tsx
-
 import React from 'react';
 import { ButtonProps } from './type';
 

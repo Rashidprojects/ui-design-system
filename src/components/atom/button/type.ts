@@ -2,8 +2,8 @@
 
 export interface ButtonProps {
     variant?: 'primary' | 'secondary';
-    children: React.ReactNode;
-    onClick?: () => void;
+    children: React.ReactNode; // Important to use ReactNode for children
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
     className?: string;
   }
   
