@@ -1,8 +1,17 @@
 {
   "name": "ui-design-system",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "main": "dist/react-ui-library.cjs.js", 
+  "module": "dist/react-ui-library.es.js",  
+  "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/react-ui-library.es.js",
+      "require": "./dist/react-ui-library.cjs.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -15,6 +24,10 @@
     "path-browserify": "^1.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
