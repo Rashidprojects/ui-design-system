@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
+    "module": "ESNext",
     "target": "ESNext",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "moduleResolution": "node",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -9,12 +14,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "isolatedModules": true
   },
   "include": ["src"]
 }
